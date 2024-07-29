@@ -67,6 +67,8 @@ async def on_message(message):
                 await channel.send(f"{member} был забанен!")
                 await member.ban(reason='Так нужно')
 
+print("Hello")
+
     if message.content.lower().startswith('!кик'):
         list = message.content.split()
         for member in client.get_all_members():
